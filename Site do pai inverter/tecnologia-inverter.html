@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informações detalhadas sobre tecnologia Inverter para ar-condicionado, seus benefícios e serviços especializados.">
+    <title>Tecnologia Inverter - Conserto de Ar Condicionado</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .inverter-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .inverter-list li {
+            position: relative;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+    
+        .inverter-list li:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: 0%; /* Aparece abaixo do item */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #3917c2;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            white-space: nowrap;
+            z-index: 100;
+            font-size: 0.9em;
+            text-align: center;
+        }
+    
+        .inverter-list li:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+    
+        .inverter-list li::after {
+            content: '';
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Tecnologia Inverter</h1>
+            <p>Eficiência energética e maior durabilidade para o seu ar-condicionado</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre-nos">Sobre Nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section id="tecnologia-inverter">
+            <h1>Tecnologia Inverter</h1>
+            <p>Saiba mais sobre os benefícios da tecnologia inverter:</p>
+            <ul class="inverter-list">
+                <li data-tooltip="Redução no consumo de energia elétrica.">Maior eficiência energética.</li>
+                <li data-tooltip="Funciona de forma mais silenciosa, ideal para ambientes internos.">Operação silenciosa.</li>
+                <li data-tooltip="Vida útil prolongada do equipamento com menos desgaste.">Maior durabilidade do equipamento.</li>
+                <li data-tooltip="Economize dinheiro a longo prazo com menor consumo energético.">Economia em longo prazo.</li>
+            </ul>
+            
+        </section>
+        
+
+        <!-- Seção de Fotos -->
+        <section class="gallery">
+            <div class="container">
+                <h2>Galeria de Serviços</h2>
+                <div class="photos-grid">
+                    <img src="images/instalacao.jpg" alt="Instalação de ar condicionado" />
+                    <img src="images/manutencao.jpg" alt="Manutenção de ar condicionado Inverter" />
+                    <img src="images/higienizacao.jpg" alt="Higienização de ar condicionado" />
+                    <img src="images/tecnologia-inverter.jpg" alt="Ar condicionado com tecnologia Inverter" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Seção de Contato -->
+    <section id="contact">
+        <h2>Entre em Contato</h2>
+        <div class="contact">
+            <a href="https://wa.me/555591417437" target="_blank">
+                <i class="fas fa-phone-alt"></i> WhatsApp: +55 55 9141-7437
+            </a>
+            <a href="mailto:gabrileoliveirav8@gmail.com">
+                <i class="fas fa-envelope"></i> E-mail: gabrileoliveirav8@gmail.com
+            </a>
+            <div class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14040.049002572321!2d-53.943280550000004!3d-28.38869795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fc2d15ff27d407%3A0xbee77b2fe6dbeeaf!2sR.%20Miguel%20Marques%2C%20463%20-%20Thom%C3%A9%20de%20Souza%2C%20Iju%C3%AD%20-%20RS%2C%2098700-000!5e0!3m2!1spt-BR!2sbr!4v1737594632980!5m2!1spt-BR!2sbr" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Conserto de Ar Condicionado. Todos os direitos reservados.</p>
+    </footer>
+
+    <style>
+        .photos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .photos-grid img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .photos-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</body>
+</html>
